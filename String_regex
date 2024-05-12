@@ -1,0 +1,18 @@
+//Write a Java program to check if a vowel is present in a string by using String "REGEX.
+
+Program:
+
+import java.util.Scanner;
+
+public class OvelPresent {
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.next();
+		System.out.println(ovel(s));
+	}
+	
+	public static boolean ovel(String input) {
+		return input.toLowerCase().matches(".*[aeiou].*");
+	}
+}
